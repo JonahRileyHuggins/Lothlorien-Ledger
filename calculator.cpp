@@ -92,8 +92,7 @@ void Calculator::keyPressEvent(QKeyEvent *event)
 
     // Handle digits
     if (key >= "0" && key <= "9" || key == ".") {
-        ui->Display->setText(ui->Display->text() + key);
-        lastButton = key;
+        OperButtonPressedFromKey(key);
         return;
     }
 
