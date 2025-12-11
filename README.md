@@ -1,6 +1,7 @@
 # Lothlorien-Ledger
-
 *“Numbers flow like silver leaves through the golden woods of Lothlórien.”*
+
+<img src="./assets/Logo/Logo.png" alt="Logo" width="100" height="100" />
 
 Lothlorien-Ledger is a lightweight calculator inspired by the timeless beauty and clarity of the Golden Wood. Designed to handle arithmetic with precision, it brings the serene wisdom of the elves to your computations.
 
