@@ -211,6 +211,9 @@ double parser(const char *expression) {
                 op=GET_OPERATOR(*expr);
                 if (lastoperator && (lastoperator == &startoperator || lastoperator->operator != ')')) {
                     if (op->operator == '-') op = GET_OPERATOR('_');
+                    else if (op->operator == '/' ||
+                             op->operator == '*' ||
+                             op->operator == '+') push_numstack(&ctx, 0);
                     else if (op->operator != '(') {
                         fprintf(
                             stderr, 
